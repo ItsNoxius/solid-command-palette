@@ -1,6 +1,6 @@
-import { Root, CommandPalette } from 'solid-command-palette';
+import { Root, CommandPalette } from '@noxius/solid-command-palette';
 import { actions } from './actions';
-import 'solid-command-palette/pkg-dist/style.css';
+import '@noxius/solid-command-palette/pkg-dist/style.css';
 
 const App = () => {
   const actionsContext = {

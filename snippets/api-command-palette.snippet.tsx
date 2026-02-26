@@ -1,4 +1,4 @@
-import { CommandPalette } from 'solid-command-palette';
+import { CommandPalette } from '@noxius/solid-command-palette';
 
 <CommandPalette
   /* Placeholder for palette's search field */

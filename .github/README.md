@@ -24,7 +24,7 @@
 
 ![Solid Command Palette Demo](../public/images/demo-minimal.gif)
 
-Try the full demo on [our documentation site](https://solid-command-palette.vercel.app/demo).
+Try the full demo in the [repository](https://github.com/ItsNoxius/solid-command-palette).
 
 ## Usage
 
@@ -32,7 +32,7 @@ Try the full demo on [our documentation site](https://solid-command-palette.verc
 
 ```sh
 # Core Library
-npm install solid-command-palette
+npm install @noxius/solid-command-palette
 
 # Peer Dependencies
 npm install solid-transition-group tinykeys fuse.js
@@ -47,7 +47,7 @@ npm install solid-transition-group tinykeys fuse.js
 ```jsx
 // define actions in one module say `actions.ts`
 
-import { defineAction } from 'solid-command-palette';
+import { defineAction } from '@noxius/solid-command-palette';
 
 const minimalAction = defineAction({
   id: 'minimal',
@@ -76,9 +76,9 @@ export const actions = {
 ```jsx
 // render inside top level Solid component
 
-import { Root, CommandPalette } from 'solid-command-palette';
+import { Root, CommandPalette } from '@noxius/solid-command-palette';
 import { actions } from './actions';
-import 'solid-command-palette/pkg-dist/style.css';
+import '@noxius/solid-command-palette/pkg-dist/style.css';
 
 const App = () => {
   const actionsContext = {

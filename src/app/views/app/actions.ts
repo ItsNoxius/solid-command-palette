@@ -42,7 +42,7 @@ const githubAction = defineAction({
   shortcut: 'g h',
   run: () => {
     window.open(
-      'https://github.com/itaditya/solid-command-palette',
+      'https://github.com/ItsNoxius/solid-command-palette',
       '_blank',
       'noopener noreferrer'
     );
@@ -56,7 +56,7 @@ const npmAction = defineAction({
   shortcut: 'g n',
   run: () => {
     window.open(
-      'https://www.npmjs.com/package/solid-command-palette',
+      'https://www.npmjs.com/package/@noxius/solid-command-palette',
       '_blank',
       'noopener noreferrer'
     );

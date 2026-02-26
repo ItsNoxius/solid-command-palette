@@ -1,5 +1,5 @@
 {
-  "name": "solid-command-palette",
+  "name": "@noxius/solid-command-palette",
   "version": "1.0.1",
   "description": "Add a command palette to your Solid.js App",
   "info": "Boost your users productivity 10x by integrating our command palette.",
@@ -61,17 +61,17 @@
   "files": [
     "pkg-dist"
   ],
-  "homepage": "https://solid-command-palette.vercel.app/",
+  "homepage": "https://github.com/ItsNoxius/solid-command-palette",
   "repository": {
     "type": "git",
-    "url": "github:itaditya/solid-command-palette"
+    "url": "github:ItsNoxius/solid-command-palette"
   },
-  "bugs": "https://github.com/itaditya/solid-command-palette/issues",
+  "bugs": "https://github.com/ItsNoxius/solid-command-palette/issues",
   "contributors": [
     {
-      "name": "Aditya Agarwal",
-      "email": "adityaa803@gmail.com",
-      "url": "https://devadi.netlify.app"
+      "name": "Noxius",
+      "email": "dg2c4u@gmail.com",
+      "url": "https://github.com/ItsNoxius"
     }
   ],
   "keywords": [

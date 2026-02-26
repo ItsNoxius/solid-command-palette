@@ -1,4 +1,4 @@
-import { Root } from 'solid-command-palette';
+import { Root } from '@noxius/solid-command-palette';
 
 <Root
   /* map of all actions */

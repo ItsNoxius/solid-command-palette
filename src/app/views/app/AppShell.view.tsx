@@ -78,12 +78,6 @@ const AppShellView: Component = () => {
           <ul class={`${styles.socialList} ${utilStyles.stripSpace}`}>
             <li class={styles.socialItem}>
               <SocialIcon
-                {...socialsData.twitter}
-                class={styles.socialLink}
-              />
-            </li>
-            <li class={styles.socialItem}>
-              <SocialIcon
                 {...socialsData.github}
                 class={styles.socialLink}
               />
@@ -96,11 +90,11 @@ const AppShellView: Component = () => {
         <span>Made by</span>
         <a
           class={styles.creditLink}
-          href="https://devadi.netlify.app"
+          href="https://github.com/ItsNoxius"
           rel="noopener"
           target="_blank"
         >
-          Aditya Agarwal
+          Noxius
         </a>
       </footer>
     </section>

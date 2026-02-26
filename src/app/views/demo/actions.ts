@@ -50,7 +50,7 @@ const navigationAction = defineAction({
   shortcut: 'g h',
   run: () => {
     window.open(
-      'https://github.com/itaditya/solid-command-palette',
+      'https://github.com/ItsNoxius/solid-command-palette',
       '_blank',
       'noopener noreferrer'
     );
