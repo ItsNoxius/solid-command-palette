@@ -1,20 +1,21 @@
 import { parseKeybinding } from 'tinykeys';
 import { GetFormattedShortcut } from './types';
 
-function getFormattedKey(key: string) {
-  if (key === 'Meta') {
+function getFormattedKey(key: string | RegExp): string {
+  const keyStr = typeof key === 'string' ? key : key.source;
+  if (keyStr === 'Meta') {
     return '⌘';
   }
 
-  if (key === 'Control') {
+  if (keyStr === 'Control') {
     return 'Ctrl';
   }
 
-  if (key === 'Escape') {
+  if (keyStr === 'Escape') {
     return 'Esc';
   }
 
-  return key;
+  return keyStr;
 }
 
 export const getFormattedShortcut: GetFormattedShortcut = (shortcut) => {
