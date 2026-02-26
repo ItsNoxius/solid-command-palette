@@ -57,4 +57,19 @@ describe('Test KbdShortcut on Mac', () => {
       ]
     `);
   });
+
+  test('should handle function shortcut (avoids t2.trim error)', () => {
+    const formattedShortcut = getFormattedShortcut(
+      (() => '$mod+s') as unknown as string
+    );
+    expect(formattedShortcut.length).toBeGreaterThan(0);
+    expect(formattedShortcut[0]).toContain('s');
+  });
+
+  test('should return empty array for non-string shortcut', () => {
+    const formattedShortcut = getFormattedShortcut(
+      (123 as unknown) as string
+    );
+    expect(formattedShortcut).toEqual([]);
+  });
 });

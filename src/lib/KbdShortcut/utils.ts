@@ -19,7 +19,14 @@ function getFormattedKey(key: string | RegExp): string {
 }
 
 export const getFormattedShortcut: GetFormattedShortcut = (shortcut) => {
-  const parsedShortcut = parseKeybinding(shortcut);
+  const shortcutStr =
+    typeof shortcut === 'function'
+      ? (shortcut as () => string)()
+      : shortcut;
+  if (typeof shortcutStr !== 'string' || !shortcutStr) {
+    return [];
+  }
+  const parsedShortcut = parseKeybinding(shortcutStr);
 
   const formattedShortcut = parsedShortcut.map((group) => {
     const flatGroup = group.flat();

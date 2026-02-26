@@ -19,12 +19,18 @@ export const DemoResultContent: Component<ResultContentProps> = (p) => {
       </div>
       <div>
         <Show when={p.action.shortcut}>
-          {(shortcut) => (
-            <KbdShortcut
-              class={styles.resultShortcut}
-              shortcut={shortcut}
-            />
-          )}
+          {(shortcut) => {
+            const shortcutStr =
+              typeof shortcut === 'function'
+                ? (shortcut as () => string)()
+                : shortcut;
+            return typeof shortcutStr === 'string' ? (
+              <KbdShortcut
+                class={styles.resultShortcut}
+                shortcut={shortcutStr}
+              />
+            ) : null;
+          }}
         </Show>
       </div>
     </div>
